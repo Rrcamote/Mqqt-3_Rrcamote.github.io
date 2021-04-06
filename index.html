@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script><link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="bg-dark" id="header-text">
+        <h1>𝐌𝐐𝐓𝐓</h1>
+    </nav>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" id="pub-body">
+                    <div class="card-header bg-white" id="header-pub">
+                        <h2>𝐏𝐮𝐛𝐥𝐢𝐬𝐡</h2>
+                    </div>
+                    <div class="card-body">
+                        <label  style="font-size: 25px;" class="form-label">ᴛᴏᴘɪᴄ:</label>
+                        <input type="text" id="pub-topic" class="form-control form-control-lg bg-success text-white">
+                        <label  style="font-size: 25px;" class="form-label">ᴘᴀʏʟᴏᴀᴅ:</label>
+                        <input type="text" id="pub-payload" class="form-control form-control-lg bg-success text-white">
+                        <button id="pub-button" class="btn btn-primary my-3">𝐏𝐮𝐛𝐥𝐢𝐬𝐡</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div style="padding-bottom: 25px" class="card" id="sub-body">
+                    <div class="card-header bg-white" id="header-sub">
+                        <h2>𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞</h2>
+                    </div>
+                    <div class="card-body">
+                        <label style="font-size: 25px;" class="form-label text-white ">ᴛᴏᴘɪᴄ:</label>
+                        <input type="text" id="sub-topic" class="form-control form-control-lg bg-success text-white">
+                        <button id="sub-button" class="btn btn-primary my-5">𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞</button>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table bg-dark col-md-4">
+                <thead>
+                    <tr class="bg-white text-dark">
+                        <th style="text-align:center; font-weight: bold;" scope="col">ᴛᴏᴘɪᴄ</th>
+                        <th style="text-align:center; font-weight: bold;" scope="col">ᴘᴀʏʟᴏᴀᴅ</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                       <td></td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./browserMqtt.js"></script>
+<script src="./index.js"></script>
+</html>
